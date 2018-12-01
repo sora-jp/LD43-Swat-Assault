@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 768487632}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,6 +222,8 @@ GameObject:
   m_Component:
   - component: {fileID: 783988210}
   - component: {fileID: 783988209}
+  - component: {fileID: 783988212}
+  - component: {fileID: 783988211}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -262,6 +264,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &783988211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783988208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56b5358340e1184f879fae4b8d19549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &783988212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783988208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944818db58e3abd4c87d31b882191e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  hSpeed: 1
+  vSpeed: 1
+  gravity: 10
+  jumpForce: 4
+  groundCheck:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1505046211
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +338,7 @@ GameObject:
   - component: {fileID: 1673217551}
   - component: {fileID: 1673217553}
   - component: {fileID: 1673217552}
+  - component: {fileID: 1673217554}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -364,7 +399,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 28471
+    m_Bits: 61239
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -376,6 +411,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1673217554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673217550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b4bcf2a3f0e3c48afa61f116c4754a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensX: 1
+  sensY: 1
 --- !u!1 &2015128160
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +519,7 @@ GameObject:
   - component: {fileID: 2025554206}
   - component: {fileID: 2025554205}
   - component: {fileID: 2025554204}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
